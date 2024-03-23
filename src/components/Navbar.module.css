@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks li {
+  font-family: var(--ff-barlow);
+  font-weight: var(--fw-barlow-bold);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+
+.navLinks li a {
+  color: var(--clr-grey);
+}

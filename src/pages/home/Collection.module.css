@@ -1,0 +1,68 @@
+.collection {
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+.gradientContainer {
+  position: relative;
+}
+
+.gradientContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(254, 252, 247, 0.8044818269) 25%,
+    rgba(254, 247, 247, 0) 100%
+  );
+}
+
+.bigText {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-title-big);
+  line-height: var(--fraunces-line-height-900);
+  color: var(--clr-grey);
+}
+
+.coffeePacket {
+  width: 16rem;
+  height: 12rem;
+  margin-bottom: 1rem;
+}
+
+.coffeeTypes {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  width: 90%;
+  transform: translateY(-10%);
+}
+
+.coffeeTypes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-basis: 22%; */
+  gap: 1rem;
+}
+
+h4 {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h4);
+  color: var(--clr-dark-blue);
+  line-height: var(--fraunces-line-height-300);
+}
+
+p {
+  font-family: var(--ff-barlow);
+  font-weight: var(--fw-barlow-regular);
+  color: var(--clr-dark-blue);
+  text-align: center;
+  line-height: var(--barlow-line-height);
+}
