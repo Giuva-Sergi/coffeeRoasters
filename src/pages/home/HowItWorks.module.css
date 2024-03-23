@@ -1,0 +1,69 @@
+.how {
+  width: 80%;
+  margin-top: 8rem;
+  margin-inline: auto;
+}
+
+h4 {
+  font-family: var(--ff-fraunces);
+  color: var(--clr-grey);
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.cardsContainer {
+  --gap: 5rem;
+  display: flex;
+  gap: var(--gap);
+}
+
+.howCard {
+  --decoration-width: 2rem;
+  --decoration-position: -15%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  gap: 2rem;
+}
+
+span {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h1);
+  color: var(--clr-pale-orange);
+}
+
+h3 {
+  font-size: var(--fraunces-fs-h3);
+  line-height: var(--fraunces-line-height-400);
+  color: var(--clr-dark-blue);
+}
+
+p {
+  font-family: var(--ff-barlow);
+  font-size: 1rem;
+  text-align: left;
+  line-height: var(--barlow-line-height);
+}
+
+.howCard::before {
+  position: absolute;
+  content: "";
+  width: var(--decoration-width);
+  aspect-ratio: 1;
+  top: var(--decoration-position);
+  border: 2px solid var(--clr-dark-cyan);
+  border-radius: 50%;
+}
+
+.howCard:not(:last-of-type)::after {
+  position: absolute;
+  content: "";
+  width: calc(
+    100% + var(--gap) / 2 +
+      calc(var(--decoration-width) / 2 - var(--decoration-width) / 4)
+  );
+  top: calc(var(--decoration-position) + var(--decoration-width) / 2);
+  left: var(--decoration-width);
+  border: 1px solid var(--clr-pale-orange);
+}
