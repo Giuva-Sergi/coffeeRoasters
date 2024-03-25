@@ -1,5 +1,6 @@
 .heroSection {
-  background-image: url("../../assets/about/desktop/image-hero-whitecup.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(34, 34, 34, 0.4)),
+    url("../../assets/about/desktop/image-hero-whitecup.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem;
