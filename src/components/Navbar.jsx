@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/shared/desktop/logo.svg";
 import styles from "./Navbar.module.css";
+
 function Navbar() {
   return (
     <header className={styles.header}>

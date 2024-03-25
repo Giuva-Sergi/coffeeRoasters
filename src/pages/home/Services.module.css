@@ -15,19 +15,18 @@
   width: 40%;
 }
 
-.servicesSection h2,
-.servicesSection p {
+.servicesHeader h2,
+.servicesHeader p {
   color: var(--clr-light-cream);
 }
 
-h2 {
+.servicesHeader h2 {
   font-family: var(--ff-fraunces);
   font-size: var(--fraunces-fs-h2);
   line-height: var(--fraunces-line-height-600);
-  /* text-align: center; */
 }
 
-p {
+.servicesHeader p {
   line-height: var(--barlow-line-height);
   font-weight: var(--fw-barlow-regular);
 }
@@ -44,7 +43,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 4rem;
   background-color: var(--clr-dark-cyan);
   border-radius: 0.5rem;
   padding: 4rem 2rem;
@@ -61,7 +60,7 @@ p {
   gap: 1rem;
 }
 
-h4 {
+.card h4 {
   text-align: center;
 }
 

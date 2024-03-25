@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import CtaButton from "./CtaButton";
 import styles from "./HeroHome.module.css";
 function HeroHome() {
   return (
@@ -10,9 +10,7 @@ function HeroHome() {
           curated artisan coffees from our best roasters delivered directly to
           your door, at your schedule.
         </p>
-        <Link to="/create-plan" className={styles.ctaButton}>
-          Create your plan
-        </Link>
+        <CtaButton />
       </div>
     </section>
   );

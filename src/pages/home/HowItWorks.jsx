@@ -1,3 +1,4 @@
+import CtaButton from "./CtaButton";
 import styles from "./HowItWorks.module.css";
 function HowItWorks() {
   return (
@@ -32,6 +33,7 @@ function HowItWorks() {
           </p>
         </div>
       </div>
+      <CtaButton />
     </section>
   );
 }

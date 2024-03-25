@@ -4,7 +4,7 @@
   margin-inline: auto;
 }
 
-h4 {
+.how h4 {
   font-family: var(--ff-fraunces);
   color: var(--clr-grey);
   text-align: left;
@@ -15,11 +15,13 @@ h4 {
   --gap: 5rem;
   display: flex;
   gap: var(--gap);
+  margin-bottom: var(--gap);
 }
 
 .howCard {
   --decoration-width: 2rem;
-  --decoration-position: -15%;
+  --decoration-position: -3rem;
+  /* --decoration-position: clamp(-3rem, -15%, -5rem); */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,13 +35,13 @@ span {
   color: var(--clr-pale-orange);
 }
 
-h3 {
+.howCard h3 {
   font-size: var(--fraunces-fs-h3);
   line-height: var(--fraunces-line-height-400);
   color: var(--clr-dark-blue);
 }
 
-p {
+.howCard p {
   font-family: var(--ff-barlow);
   font-size: 1rem;
   text-align: left;

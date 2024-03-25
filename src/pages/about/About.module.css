@@ -1,0 +1,6 @@
+.main {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: stretch;
+  gap: 7rem;
+}
