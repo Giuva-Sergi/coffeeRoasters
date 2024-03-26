@@ -1,0 +1,51 @@
+.btnStep {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h4);
+  line-height: var(--fraunces-line-height-300);
+  color: var(--clr-grey);
+  transition: color 0.2s ease-in;
+}
+
+.btnStep:not(:last-of-type) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-grey);
+}
+
+.btnStep span {
+  font-size: var(--fraunces-fs-h4);
+  line-height: var(--fraunces-line-height-300);
+  color: var(--clr-grey);
+  transition: color 0.2s ease-in;
+}
+
+.btnStep:hover {
+  color: var(--clr-dark-blue);
+}
+
+.btnStep:hover span {
+  color: var(--clr-dark-cyan);
+}
+
+.active {
+  color: var(--clr-dark-blue);
+}
+
+.active span {
+  color: var(--clr-dark-cyan);
+}
+
+/* .btnStep button {
+  border: none;
+  background-color: transparent;
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h4);
+  line-height: var(--fraunces-line-height-300);
+  color: var(--clr-grey);
+  cursor: pointer;
+} */

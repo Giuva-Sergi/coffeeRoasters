@@ -1,0 +1,24 @@
+.steps {
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8rem;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.formContainer {
+  display: grid;
+  gap: 3rem;
+}

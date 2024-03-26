@@ -1,0 +1,38 @@
+.formField {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordionTitle {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h3);
+  line-height: var(--fraunces-line-height-400);
+  color: var(--clr-grey);
+}
+
+.radioBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  transform: translateY(-50%);
+  max-height: 0;
+  transition: transform 0.3s ease-in-out, max-height 0.2s ease-in-out;
+}
+
+.active {
+  transform: translateY(0);
+  max-height: max-content;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

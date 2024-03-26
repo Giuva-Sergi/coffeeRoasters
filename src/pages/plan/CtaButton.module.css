@@ -1,0 +1,9 @@
+.ctaButton {
+  place-self: end;
+  border: none;
+  background-color: var(--clr-dark-cyan);
+  font-family: var(--ff-fraunces);
+  color: var(--clr-light-cream);
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+}

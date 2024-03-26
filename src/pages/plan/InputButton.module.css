@@ -1,0 +1,43 @@
+.input {
+  display: grid;
+  gap: 2rem;
+  background-color: #f4f1eb;
+  margin-top: 2rem;
+  padding: 2rem 4rem 6rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.input:hover {
+  background-color: var(--clr-pale-orange);
+}
+
+.input label {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h4);
+  color: var(--clr-dark-blue);
+}
+
+.input p {
+  text-align: left;
+  color: var(--clr-dark-blue);
+  line-height: var(--barlow-line-height);
+}
+
+.input input {
+  display: none;
+}
+
+.selected,
+.selected:hover {
+  background-color: var(--clr-dark-cyan);
+}
+
+.selected label {
+  color: var(--clr-white);
+}
+
+.selected p {
+  color: var(--clr-light-cream);
+}

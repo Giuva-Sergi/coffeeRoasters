@@ -6,6 +6,7 @@
   --clr-dark-blue: #333d4b;
   --clr-pale-orange: #fdd6ba;
   --clr-light-cream: #fefcf7;
+  --clr-white: #fff;
   --clr-grey: #83888f;
 
   --ff-fraunces: "Fraunces", serif;
@@ -22,6 +23,7 @@
 
   --fraunces-line-height-900: 4.5rem;
   --fraunces-line-height-600: 3rem;
+  --fraunces-line-height-500: 2.5rem;
   --fraunces-line-height-400: 2.25rem;
   --fraunces-line-height-300: 2rem;
 
