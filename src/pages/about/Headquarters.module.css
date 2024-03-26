@@ -1,0 +1,36 @@
+.headquarters {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.headquarters h4 {
+  font-size: var(--fraunces-fs-h4);
+  line-height: var(--fraunces-line-height-300);
+  color: var(--clr-grey);
+}
+
+.headquartersContainer {
+  display: flex;
+  gap: 6rem;
+}
+
+.card {
+  display: grid;
+  gap: 2rem;
+  color: var(--clr-dark-blue);
+}
+
+.card h3 {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h3);
+  line-height: var(--fraunces-line-height-400);
+}
+
+address {
+  font-style: normal;
+  font-family: var(--ff-barlow);
+  line-height: var(--barlow-line-height);
+}

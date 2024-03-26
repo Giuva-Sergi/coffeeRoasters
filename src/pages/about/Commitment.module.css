@@ -1,0 +1,31 @@
+.commitment {
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8rem;
+}
+
+.description {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--clr-dark-blue);
+}
+
+.description h3 {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h3);
+}
+
+.description p {
+  font-family: var(--ff-barlow);
+  text-align: left;
+  line-height: var(--barlow-line-height);
+}
+
+.picture {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}

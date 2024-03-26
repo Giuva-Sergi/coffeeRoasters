@@ -1,9 +1,9 @@
 import CtaButton from "./CtaButton";
 import styles from "./HowItWorks.module.css";
-function HowItWorks() {
+function HowItWorks({ createPlan = false }) {
   return (
-    <section className={styles.how}>
-      <h4>How it works</h4>
+    <section className={createPlan ? styles.howPlan : styles.how}>
+      {!createPlan && <h4>How it works</h4>}
       <div className={styles.cardsContainer}>
         <div className={styles.howCard}>
           <span>01</span>
@@ -33,7 +33,7 @@ function HowItWorks() {
           </p>
         </div>
       </div>
-      <CtaButton />
+      {!createPlan && <CtaButton />}
     </section>
   );
 }

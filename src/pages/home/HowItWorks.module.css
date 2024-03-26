@@ -1,3 +1,16 @@
+.howPlan {
+  background: url("../../assets/plan/desktop/bg-steps.png");
+  background-size: cover;
+  margin-top: 8rem;
+  padding: 9rem 0 0 3.5rem;
+  border-radius: 0.5rem;
+}
+
+.howPlan .howCard h3,
+.howPlan .howCard p {
+  color: var(--clr-light-cream);
+}
+
 .how {
   width: 80%;
   margin-top: 8rem;
@@ -18,6 +31,10 @@
   margin-bottom: var(--gap);
 }
 
+.howPlan .howCard {
+  width: 27%;
+}
+
 .howCard {
   --decoration-width: 2rem;
   --decoration-position: -3rem;
@@ -25,7 +42,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 28%;
+  width: 24%;
   gap: 2rem;
 }
 
@@ -36,6 +53,7 @@ span {
 }
 
 .howCard h3 {
+  font-family: var(--ff-fraunces);
   font-size: var(--fraunces-fs-h3);
   line-height: var(--fraunces-line-height-400);
   color: var(--clr-dark-blue);

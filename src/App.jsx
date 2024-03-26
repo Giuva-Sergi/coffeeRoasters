@@ -10,11 +10,13 @@ function App() {
   return (
     <Wrapper>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="create-plan" element={<CreatePlan />} />
       </Routes>
+
       <Footer />
     </Wrapper>
   );

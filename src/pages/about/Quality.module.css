@@ -1,0 +1,36 @@
+.quality {
+  background: url("../../assets/about/desktop/bg-quality.png");
+  background-size: cover;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8rem;
+  padding: 7rem 7rem 0 7rem;
+  margin-top: 7rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--clr-light-cream);
+}
+
+.description h3 {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fraunces-fs-h3);
+  line-height: var(--fraunces-line-height-600);
+}
+
+.description p {
+  color: currentColor;
+  font-weight: var(--fw-barlow-regular);
+  text-align: left;
+  line-height: var(--barlow-line-height);
+}
+
+.picture {
+  transform: translateY(-10rem);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
