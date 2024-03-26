@@ -3,8 +3,6 @@ import styles from "./InputButton.module.css";
 function InputButton({ id, name, info, dispatch }) {
   const { title, details, selected } = info;
 
-  console.log(info);
-
   function handleOnClick() {
     dispatch({ type: "SELECT_OPTION", payload: { title, id } });
   }

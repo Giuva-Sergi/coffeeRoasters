@@ -1,5 +1,5 @@
 import styles from "./OrderSummary.module.css";
-function OrderSummary() {
+function OrderSummary({ preferences }) {
   return (
     <div className={styles.summary}>
       <h5>order summary</h5>

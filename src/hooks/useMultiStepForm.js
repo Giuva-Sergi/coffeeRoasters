@@ -163,7 +163,15 @@ function reducer(state, action) {
 
 function useMultiStepForm() {
   const [steps, dispatch] = useReducer(reducer, initialState);
-  return { steps, dispatch };
+  const userPreferences = steps.map((step) => ({
+    [step.button]: step.selectedOption,
+  }));
+  return {
+    steps,
+    dispatch,
+    userPreferences,
+    isCapsule: userPreferences.at(0).Preferences === "Capsule",
+  };
 }
 
 export { useMultiStepForm };

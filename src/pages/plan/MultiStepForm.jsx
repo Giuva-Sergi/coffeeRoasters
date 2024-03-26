@@ -6,9 +6,10 @@ import CtaButton from "./CtaButton";
 import styles from "./MultiStepForm.module.css";
 
 function MultiStepForm() {
-  const { steps, dispatch } = useMultiStepForm();
-  const userPreferences = steps.map((step) => step.selectedOption);
-  // console.log(userPreferences);
+  const { steps, dispatch, userPreferences, isCapsule } = useMultiStepForm();
+  console.log(isCapsule);
+  console.log(userPreferences);
+
   return (
     <section className={styles.steps}>
       <div className={styles.btnContainer}>
@@ -17,7 +18,8 @@ function MultiStepForm() {
             key={step.id}
             step={step}
             dispatch={dispatch}
-            userPreferences={userPreferences}
+            // userPreferences={userPreferences}
+            isCapsule={isCapsule}
           />
         ))}
       </div>
@@ -32,7 +34,7 @@ function MultiStepForm() {
             />
           ))}
         </form>
-        <OrderSummary />
+        <OrderSummary preferences={userPreferences} />
         <CtaButton />
       </div>
     </section>

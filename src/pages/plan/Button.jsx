@@ -1,14 +1,12 @@
 import styles from "./Button.module.css";
 
-function Button({ step, dispatch, userPreferences }) {
+function Button({ step, dispatch, isCapsule }) {
   const { button, id, isActive, selectedOption } = step;
 
   // console.log(userPreferences.includes("Capsule"));
   return (
     <button
-      disabled={
-        button === "Grind option" && userPreferences.includes("Capsule")
-      }
+      disabled={button === "Grind option" && isCapsule}
       onClick={() => dispatch({ type: "OPEN_ACCORDION", id })}
       className={
         isActive ? `${styles.active} ${styles.btnStep}` : `${styles.btnStep}`

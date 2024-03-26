@@ -40,6 +40,10 @@
   color: var(--clr-dark-cyan);
 }
 
+.btnStep:disabled {
+  pointer-events: none;
+}
+
 /* .btnStep button {
   border: none;
   background-color: transparent;
