@@ -7,8 +7,6 @@ import styles from "./MultiStepForm.module.css";
 
 function MultiStepForm() {
   const { steps, dispatch, userPreferences, isCapsule } = useMultiStepForm();
-  console.log(isCapsule);
-  console.log(userPreferences);
 
   return (
     <section className={styles.steps}>
@@ -18,7 +16,6 @@ function MultiStepForm() {
             key={step.id}
             step={step}
             dispatch={dispatch}
-            // userPreferences={userPreferences}
             isCapsule={isCapsule}
           />
         ))}
@@ -30,7 +27,7 @@ function MultiStepForm() {
               key={step.id}
               step={step}
               dispatch={dispatch}
-              userPreferences={userPreferences}
+              isCapsule={isCapsule}
             />
           ))}
         </form>

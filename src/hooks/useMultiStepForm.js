@@ -163,14 +163,20 @@ function reducer(state, action) {
 
 function useMultiStepForm() {
   const [steps, dispatch] = useReducer(reducer, initialState);
-  const userPreferences = steps.map((step) => ({
-    [step.button]: step.selectedOption,
-  }));
+
+  const userPreferences = {
+    preferences: steps.at(0).selectedOption,
+    beanType: steps.at(1).selectedOption,
+    quantity: steps.at(2).selectedOption,
+    grindOption: steps.at(3).selectedOption,
+    deliveries: steps.at(4).selectedOption,
+  };
+
   return {
     steps,
     dispatch,
     userPreferences,
-    isCapsule: userPreferences.at(0).Preferences === "Capsule",
+    isCapsule: userPreferences.preferences === "Capsule",
   };
 }
 

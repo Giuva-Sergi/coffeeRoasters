@@ -40,16 +40,12 @@
   color: var(--clr-dark-cyan);
 }
 
-.btnStep:disabled {
+.btnStep:disabled,
+.btnStep:disabled span {
   pointer-events: none;
+  color: rgba(131, 136, 143, 0.3);
 }
 
-/* .btnStep button {
-  border: none;
-  background-color: transparent;
-  font-family: var(--ff-fraunces);
-  font-size: var(--fraunces-fs-h4);
-  line-height: var(--fraunces-line-height-300);
+.btnStep:disabled:hover {
   color: var(--clr-grey);
-  cursor: pointer;
-} */
+}

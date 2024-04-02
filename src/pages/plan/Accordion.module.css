@@ -5,6 +5,14 @@
   border: none;
 }
 
+.formField:disabled {
+  pointer-events: none;
+}
+
+.formField:disabled .accordionTitle {
+  color: rgba(131, 136, 143, 0.3);
+}
+
 .accordionHeader {
   display: flex;
   justify-content: space-between;

@@ -2,7 +2,7 @@ import InputButton from "./InputButton";
 import styles from "./Accordion.module.css";
 import arrow from "../../assets/plan/desktop/icon-arrow.svg";
 
-function Accordion({ step, dispatch }) {
+function Accordion({ step, dispatch, isCapsule }) {
   const {
     id,
     button: buttonName,
@@ -12,7 +12,10 @@ function Accordion({ step, dispatch }) {
   } = step;
 
   return (
-    <fieldset className={styles.formField}>
+    <fieldset
+      className={styles.formField}
+      disabled={isCapsule && accordionTitle === "Want us to grind them?"}
+    >
       <div
         className={styles.accordionHeader}
         onClick={() => dispatch({ type: "OPEN_ACCORDION", id })}
