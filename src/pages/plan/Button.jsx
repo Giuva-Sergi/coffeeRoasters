@@ -1,9 +1,8 @@
 import styles from "./Button.module.css";
 
 function Button({ step, dispatch, isCapsule }) {
-  const { button, id, isActive, selectedOption } = step;
+  const { button, id, isActive } = step;
 
-  // console.log(userPreferences.includes("Capsule"));
   return (
     <button
       disabled={button === "Grind option" && isCapsule}

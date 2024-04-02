@@ -10,7 +10,7 @@ function HeroHome() {
           curated artisan coffees from our best roasters delivered directly to
           your door, at your schedule.
         </p>
-        <CtaButton />
+        <CtaButton message={"Create your plan"} />
       </div>
     </section>
   );

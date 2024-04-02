@@ -33,7 +33,7 @@ function HowItWorks({ createPlan = false }) {
           </p>
         </div>
       </div>
-      {!createPlan && <CtaButton />}
+      {!createPlan && <CtaButton message={"Create your plan"} />}
     </section>
   );
 }

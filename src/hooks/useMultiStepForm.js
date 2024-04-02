@@ -172,11 +172,46 @@ function useMultiStepForm() {
     deliveries: steps.at(4).selectedOption,
   };
 
+  let total;
+
+  if (userPreferences.deliveries.toLowerCase() === "every week") {
+    if (userPreferences.quantity === "250g") {
+      total = 7.2;
+    } else if (userPreferences.quantity === "500g") {
+      total = 13;
+    } else {
+      total = 22;
+    }
+  } else if (userPreferences.deliveries.toLowerCase() === "every 2 weeks") {
+    if (userPreferences.quantity === "250g") {
+      total = 9.6;
+    } else if (userPreferences.quantity === "500g") {
+      total = 17.5;
+    } else {
+      total = 32;
+    }
+  } else if (userPreferences.deliveries.toLowerCase() === "every month") {
+    if (userPreferences.quantity === "250g") {
+      total = 12;
+    } else if (userPreferences.quantity === "500g") {
+      total = 22;
+    } else {
+      total = 42;
+    }
+  }
+
   return {
     steps,
     dispatch,
     userPreferences,
     isCapsule: userPreferences.preferences === "Capsule",
+    total,
+    isReady:
+      userPreferences.preferences !== "" &&
+      userPreferences.beanType !== "" &&
+      userPreferences.quantity !== "" &&
+      userPreferences.grindOption !== "" &&
+      userPreferences.deliveries !== "",
   };
 }
 
