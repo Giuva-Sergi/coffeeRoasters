@@ -23,3 +23,9 @@
   line-height: var(--fraunces-line-height-500);
   color: var(--clr-dark-cyan);
 }
+
+@media (max-width: 1140px) {
+  .order {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+}

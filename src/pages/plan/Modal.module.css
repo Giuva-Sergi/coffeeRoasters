@@ -83,3 +83,9 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 1140px) {
+  .modalContainer {
+    max-width: 80%;
+  }
+}

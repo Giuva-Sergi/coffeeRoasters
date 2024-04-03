@@ -13,3 +13,9 @@
   cursor: not-allowed;
   background-color: var(--clr-disabled);
 }
+
+@media (max-width: 1140px) {
+  .ctaButton {
+    place-self: center;
+  }
+}

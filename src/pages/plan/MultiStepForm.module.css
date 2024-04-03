@@ -22,3 +22,14 @@
   display: grid;
   gap: 3rem;
 }
+
+@media (max-width: 1140px) {
+  .btnContainer {
+    display: none;
+  }
+
+  .steps {
+    width: unset;
+    grid-template-columns: unset;
+  }
+}

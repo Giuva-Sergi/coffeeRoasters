@@ -68,3 +68,38 @@
   width: 3.5rem;
   aspect-ratio: 1.1;
 }
+
+@media (max-width: 1140px) {
+  .servicesHeader {
+    width: 80%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card > div {
+    align-items: flex-start;
+  }
+
+  .card p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 980px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card > div {
+    align-items: center;
+  }
+
+  .card p {
+    text-align: center;
+  }
+}

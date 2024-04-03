@@ -29,3 +29,30 @@
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
+@media (max-width: 1140px) {
+  .commitment {
+    width: 100%;
+    gap: 4rem;
+  }
+
+  .description {
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 728px) {
+  .commitment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description h3,
+  .description p {
+    text-align: center;
+  }
+
+  .description h3 {
+    font-size: clamp(3.5rem, 9vw, 6rem);
+  }
+}

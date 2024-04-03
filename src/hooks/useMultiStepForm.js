@@ -200,18 +200,20 @@ function useMultiStepForm() {
     }
   }
 
+  const isReady =
+    userPreferences.beanType !== "" &&
+    userPreferences.quantity !== "" &&
+    userPreferences.deliveries !== "" &&
+    (userPreferences.preferences === "Capsule" ||
+      userPreferences.grindOption !== "");
+
   return {
     steps,
     dispatch,
     userPreferences,
     isCapsule: userPreferences.preferences === "Capsule",
     total,
-    isReady:
-      userPreferences.preferences !== "" &&
-      userPreferences.beanType !== "" &&
-      userPreferences.quantity !== "" &&
-      userPreferences.grindOption !== "" &&
-      userPreferences.deliveries !== "",
+    isReady: isReady,
   };
 }
 

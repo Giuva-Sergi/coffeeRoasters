@@ -24,3 +24,9 @@
 .navLinks li a:hover {
   color: var(--clr-dark-blue);
 }
+
+@media (max-width: 1140px) {
+  .navLinks {
+    gap: 3rem;
+  }
+}

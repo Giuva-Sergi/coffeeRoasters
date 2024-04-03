@@ -1,11 +1,11 @@
 import { useMultiStepForm } from "../../hooks/useMultiStepForm";
+import { useState } from "react";
 import Button from "./Button";
 import Accordion from "./Accordion";
 import OrderSummary from "./OrderSummary";
 import CtaButton from "./CtaButton";
-import styles from "./MultiStepForm.module.css";
 import Modal from "./Modal";
-import { useState } from "react";
+import styles from "./MultiStepForm.module.css";
 
 function MultiStepForm() {
   const { steps, dispatch, userPreferences, isCapsule, isReady } =

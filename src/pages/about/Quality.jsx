@@ -18,11 +18,11 @@ function Quality() {
       </div>
       <picture>
         <source media="(max-width: 728px)" srcset={qualityMobile} />
-        <source media="(max-width: 1024px)" srcset={qualityTablet} />
+        <source media="(max-width: 1140px)" srcset={qualityTablet} />
         <img
           className={styles.picture}
           src={qualityDesktop}
-          alt="Image of a cappucino cup on a wooden table"
+          alt="Image of a cappuccino cup on a wooden table"
         />
       </picture>
     </section>

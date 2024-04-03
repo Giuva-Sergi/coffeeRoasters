@@ -2,6 +2,7 @@ import styles from "./Commitment.module.css";
 import commitmentDesktop from "../../assets/about/desktop/image-commitment.jpg";
 import commitmentTablet from "../../assets/about/tablet/image-commitment.jpg";
 import commitmentMobile from "../../assets/about/mobile/image-commitment.jpg";
+
 function Commitment() {
   return (
     <section className={styles.commitment}>

@@ -65,3 +65,44 @@ p {
   text-align: center;
   line-height: var(--barlow-line-height);
 }
+
+@media (max-width: 1140px) {
+  .collection {
+    width: 100%;
+  }
+
+  .coffeeTypes {
+    flex-direction: column;
+    transform: translateY(-5%);
+  }
+
+  .coffeeTypes > div {
+    flex-direction: row;
+  }
+
+  .coffeeTypes div:last-child {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 980px) {
+  .collection {
+    gap: 2rem;
+  }
+  .bigText {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .coffeeTypes {
+    transform: translateY(0);
+    gap: 3rem;
+  }
+
+  .coffeeTypes > div {
+    flex-direction: column;
+  }
+
+  .coffeeTypes div:last-child {
+    align-items: center;
+  }
+}

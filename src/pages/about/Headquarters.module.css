@@ -18,6 +18,7 @@
 }
 
 .card {
+  flex: 1;
   display: grid;
   gap: 2rem;
   color: var(--clr-dark-blue);
@@ -33,4 +34,22 @@ address {
   font-style: normal;
   font-family: var(--ff-barlow);
   line-height: var(--barlow-line-height);
+}
+
+@media (max-width: 1140px) {
+  .headquarters {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .headquarters {
+    align-items: center;
+  }
+  .headquartersContainer {
+    flex-direction: column;
+  }
+  .card {
+    justify-items: center;
+  }
 }

@@ -37,3 +37,15 @@
   margin-left: auto;
   cursor: pointer;
 }
+
+@media (max-width: 1140px) {
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .socials {
+    margin-top: 1rem;
+    margin-left: unset;
+  }
+}
