@@ -5,6 +5,10 @@ import { useState } from "react";
 
 function Navbar() {
   const [menuVisibility, setMenuVisibility] = useState(false);
+  const classList = !menuVisibility
+    ? `${styles.primaryNav} ${styles.navHidden}`
+    : `${styles.primaryNav}`;
+
   return (
     <header className={styles.header}>
       <img src={logo} alt="Coffee roasters logo" />
@@ -12,17 +16,24 @@ function Navbar() {
         aria-controls="primary-nav"
         aria-expanded={menuVisibility}
         className={styles.menuBtn}
+        onClick={() => setMenuVisibility(!menuVisibility)}
       ></button>
-      <nav id="primary-nav" className={styles.primaryNav}>
+      <nav id="primary-nav" className={classList}>
         <ul className={styles.navLinks}>
           <li>
-            <Link to="/">home</Link>
+            <Link to="/" onClick={() => setMenuVisibility(false)}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">about us</Link>
+            <Link to="/about" onClick={() => setMenuVisibility(false)}>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to="/create-plan">create your plan</Link>
+            <Link to="/create-plan" onClick={() => setMenuVisibility(false)}>
+              Create Your Plan
+            </Link>
           </li>
         </ul>
       </nav>

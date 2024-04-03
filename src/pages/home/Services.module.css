@@ -102,4 +102,8 @@
   .card p {
     text-align: center;
   }
+
+  .servicesHeader h2 {
+    font-size: clamp(1rem, 8vw, 2.5rem);
+  }
 }
