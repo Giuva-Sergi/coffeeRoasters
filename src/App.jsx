@@ -9,7 +9,7 @@ import CreatePlan from "./pages/plan/CreatePlan";
 function App() {
   return (
     <Wrapper>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />

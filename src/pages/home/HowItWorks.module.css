@@ -109,6 +109,8 @@ span {
 
   .cardsContainer {
     flex-direction: column;
+    align-items: center;
+    padding-block: 2rem;
   }
 
   .howCard {
@@ -118,5 +120,17 @@ span {
 
   .howCard p {
     text-align: center;
+  }
+
+  .howCard h3 {
+    text-align: center;
+  }
+
+  .howPlan {
+    padding: 0;
+  }
+
+  .howPlan .howCard {
+    width: 45%;
   }
 }

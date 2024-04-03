@@ -47,10 +47,11 @@
   }
 
   .heroSectionContainer {
+    align-items: center;
     width: 80%;
-    /* padding: unset; */
     margin-inline: auto;
-    padding-block: auto;
+    padding: 0;
+    padding-block: 40%;
   }
 
   .heroSectionContainer h2 {

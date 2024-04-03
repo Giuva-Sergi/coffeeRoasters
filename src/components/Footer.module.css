@@ -49,3 +49,11 @@
     margin-left: unset;
   }
 }
+
+@media (max-width: 980px) {
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
