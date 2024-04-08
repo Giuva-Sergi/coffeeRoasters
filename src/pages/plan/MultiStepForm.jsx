@@ -8,7 +8,7 @@ import Modal from "./Modal";
 import styles from "./MultiStepForm.module.css";
 
 function MultiStepForm() {
-  const { steps, dispatch, userPreferences, isCapsule, isReady } =
+  const { steps, dispatch, userPreferences, isCapsule, isReady, total } =
     useMultiStepForm();
   const [modalVisibility, setModalVisibility] = useState(false);
 
@@ -21,6 +21,8 @@ function MultiStepForm() {
       <Modal
         visibility={modalVisibility}
         onHandleVisibility={handleVisibility}
+        userPreferences={userPreferences}
+        total={total}
       />
       <section className={styles.steps}>
         <div className={styles.btnContainer}>

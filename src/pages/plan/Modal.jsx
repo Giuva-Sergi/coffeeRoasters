@@ -1,5 +1,8 @@
 import styles from "./Modal.module.css";
-function Modal({ visibility, onHandleVisibility }) {
+function Modal({ visibility, onHandleVisibility, userPreferences, total }) {
+  const { preferences, beanType, deliveries, grindOption, quantity } =
+    userPreferences;
+
   return (
     <div
       className={visibility ? `${styles.modal} ${styles.active}` : styles.modal}
@@ -10,12 +13,25 @@ function Modal({ visibility, onHandleVisibility }) {
         </header>
         <section className={styles.summary}>
           <p className={styles.orderDescription}>
-            “I drink my coffee as{" "}
-            <span className={styles.highlight}> Filter</span>, with a
-            <span className={styles.highlight}> Decaf</span> type of bean.
-            <span className={styles.highlight}> 250g</span> ground ala
-            <span className={styles.highlight}> Cafetiére</span>, sent to me
-            <span className={styles.highlight}> Every Week</span>.”
+            {"“I drink my coffee "}
+            {preferences === "Capsule" ? (
+              <>
+                using <span className={styles.highlight}>{preferences}</span>,
+                with a <span className={styles.highlight}>{beanType}</span> type
+                of bean.
+                <span className={styles.highlight}>{quantity}</span> sent to me{" "}
+                <span className={styles.highlight}>{deliveries}</span>.
+              </>
+            ) : (
+              <>
+                as <span className={styles.highlight}>{preferences}</span>, with
+                a <span className={styles.highlight}>{beanType}</span> type of
+                bean.
+                <span className={styles.highlight}>{quantity}</span> ground ala{" "}
+                <span className={styles.highlight}>{grindOption}</span>, sent to
+                me <span className={styles.highlight}>{deliveries}</span>.
+              </>
+            )}
           </p>
           <p className={styles.notification}>
             Is this correct? You can proceed to checkout or go back to plan
@@ -23,7 +39,7 @@ function Modal({ visibility, onHandleVisibility }) {
             be redeemed at the checkout.
           </p>
           <div className={styles.ctaContainer}>
-            <span className={styles.total}>$14.00/ mo</span>
+            <span className={styles.total}>$ {total}.00/ mo</span>
             <button
               className={styles.checkoutBtn}
               onClick={() => onHandleVisibility()}

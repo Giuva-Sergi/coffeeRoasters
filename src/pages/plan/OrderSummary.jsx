@@ -8,7 +8,13 @@ function OrderSummary({ preferences }) {
     deliveries,
   } = preferences;
 
-  if (pref === "") {
+  if (
+    pref === "" &&
+    beanType === "" &&
+    quantity === "" &&
+    grindOption === "" &&
+    deliveries === ""
+  ) {
     return (
       <div className={styles.summary}>
         <h5>order summary</h5>
@@ -25,9 +31,9 @@ function OrderSummary({ preferences }) {
       <div className={styles.summary}>
         <h5>order summary</h5>
         <p className={styles.order}>
-          “I drink my coffee {pref === "Capsule" ? "using" : "as"}{" "}
-          <span>{pref}</span>, with a <span>{beanType || "..."}</span> type of
-          bean. <span>{quantity || "..."}</span>, sent to me{" "}
+          “I drink my coffee using <span>{pref}</span>, with a{" "}
+          <span>{beanType || "..."}</span> type of bean.{" "}
+          <span>{quantity || "..."}</span>, sent to me{" "}
           <span>{deliveries || "..."}</span>”
         </p>
       </div>
@@ -38,9 +44,9 @@ function OrderSummary({ preferences }) {
     <div className={styles.summary}>
       <h5>order summary</h5>
       <p className={styles.order}>
-        “I drink my coffee {pref === "Capsule" ? "using" : "as"}{" "}
-        <span>{pref}</span>, with a <span>{beanType || "..."}</span> type of
-        bean. <span>{quantity || "..."}</span> ground ala
+        “I drink my coffee as <span>{pref}</span>, with a{" "}
+        <span>{beanType || "..."}</span> type of bean.{" "}
+        <span>{quantity || "..."}</span> ground ala
         <span>{grindOption || "..."}</span>, sent to me{" "}
         <span>{deliveries || "..."}</span>”
       </p>

@@ -67,6 +67,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 .total {
@@ -87,5 +88,24 @@
 @media (max-width: 1140px) {
   .modalContainer {
     max-width: 80%;
+  }
+}
+
+@media (max-width: 980px) {
+  /* .modalContainer {
+    max-width: 95%;
+  } */
+
+  .modalHeader,
+  .summary {
+    padding: 1rem;
+  }
+
+  .modalHeader h2 {
+    font-size: 1.75rem;
+  }
+  .ctaContainer {
+    gap: 2rem;
+    justify-content: center;
   }
 }
