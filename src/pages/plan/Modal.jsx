@@ -39,7 +39,7 @@ function Modal({ visibility, onHandleVisibility, userPreferences, total }) {
             be redeemed at the checkout.
           </p>
           <div className={styles.ctaContainer}>
-            <span className={styles.total}>$ {total}.00/ mo</span>
+            <span className={styles.total}>$ {total}/ mo</span>
             <button
               className={styles.checkoutBtn}
               onClick={() => onHandleVisibility()}

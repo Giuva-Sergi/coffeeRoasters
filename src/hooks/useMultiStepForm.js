@@ -186,9 +186,9 @@ function useMultiStepForm() {
     if (userPreferences.quantity === "250g") {
       total = 7.2;
     } else if (userPreferences.quantity === "500g") {
-      total = 13;
+      total = 13.0;
     } else {
-      total = 22;
+      total = 22.0;
     }
   } else if (userPreferences.deliveries.toLowerCase() === "every 2 weeks") {
     if (userPreferences.quantity === "250g") {
@@ -196,15 +196,15 @@ function useMultiStepForm() {
     } else if (userPreferences.quantity === "500g") {
       total = 17.5;
     } else {
-      total = 32;
+      total = 32.0;
     }
   } else if (userPreferences.deliveries.toLowerCase() === "every month") {
     if (userPreferences.quantity === "250g") {
-      total = 12;
+      total = 12.0;
     } else if (userPreferences.quantity === "500g") {
-      total = 22;
+      total = 22.0;
     } else {
-      total = 42;
+      total = 42.0;
     }
   }
 
