@@ -15,6 +15,7 @@ function Navbar() {
       <button
         aria-controls="primary-nav"
         aria-expanded={menuVisibility}
+        aria-label="menu"
         className={styles.menuBtn}
         onClick={() => setMenuVisibility(!menuVisibility)}
       ></button>
