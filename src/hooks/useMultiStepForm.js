@@ -154,7 +154,7 @@ function reducer(state, action) {
       return updatedState;
     case "OPEN_ACCORDION":
       return state.map((item) =>
-        item.id === action.id ? { ...item, isActive: !item.isActive } : item
+        item.id === action.id ? { ...item, isActive: !item.isActive } : item,
       );
     default:
       throw new Error("Command not found.");
