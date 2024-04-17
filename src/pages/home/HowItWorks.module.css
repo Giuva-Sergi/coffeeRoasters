@@ -1,9 +1,12 @@
 .howPlan {
   background: url("../../assets/plan/desktop/bg-steps.png");
   background-size: cover;
-  margin-top: 8rem;
   padding: 9rem 0 0 3.5rem;
   border-radius: 0.5rem;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 8rem;
 }
 
 .howPlan .howCard h3,
@@ -12,6 +15,8 @@
 }
 
 .how {
+  max-width: 1440px;
+
   width: 80%;
   margin-top: 8rem;
   margin-inline: auto;
@@ -28,6 +33,9 @@
   --gap: 5rem;
   display: flex;
   gap: var(--gap);
+
+  max-width: 1440px;
+  margin: 0 auto;
   margin-bottom: var(--gap);
 }
 

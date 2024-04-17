@@ -4,6 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem;
+
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .heroSectionContainer {

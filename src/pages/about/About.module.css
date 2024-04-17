@@ -1,6 +1,9 @@
 .main {
-  margin-top: 2rem;
   display: grid;
   justify-items: stretch;
   gap: 7rem;
+
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 2rem;
 }

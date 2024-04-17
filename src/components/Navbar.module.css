@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block-start: 2rem;
+
+  max-width: 1440px;
+  margin: auto;
 }
 
 .navLinks {
