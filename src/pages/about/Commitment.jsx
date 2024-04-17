@@ -8,8 +8,8 @@ function Commitment() {
   return (
     <section className={styles.commitment}>
       <picture>
-        <source media="(max-width: 728px)" srcset={commitmentMobile} />
-        <source media="(max-width: 900px)" srcset={commitmentTablet} />
+        <source media="(max-width: 728px)" srcSet={commitmentMobile} />
+        <source media="(max-width: 900px)" srcSet={commitmentTablet} />
         <img
           className={styles.picture}
           src={commitmentDesktop}
