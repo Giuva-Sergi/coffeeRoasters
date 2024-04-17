@@ -19,10 +19,15 @@
   font-size: var(--fraunces-fs-h3);
 }
 
-.description p {
+.description p span {
   font-family: var(--ff-barlow);
   text-align: left;
   line-height: var(--barlow-line-height);
+}
+
+.description span {
+  color: inherit;
+  font-size: inherit;
 }
 
 .picture {

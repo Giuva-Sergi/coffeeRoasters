@@ -16,6 +16,7 @@
   color: var(--clr-light-cream);
 }
 
+
 .description h3 {
   font-family: var(--ff-fraunces);
   font-size: var(--fraunces-fs-h3);
@@ -27,6 +28,16 @@
   font-weight: var(--fw-barlow-regular);
   text-align: left;
   line-height: var(--barlow-line-height);
+}
+.description p span {
+  font-family: var(--ff-barlow);
+  text-align: left;
+  line-height: var(--barlow-line-height);
+}
+
+.description span {
+  color: inherit;
+  font-size: inherit;
 }
 
 .picture {
